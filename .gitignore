@@ -1,0 +1,252 @@
+# ==========================================================
+# DADIS - Git Ignore
+# ==========================================================
+
+
+# ==========================================================
+# Python
+# ==========================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+*.pyo
+*.pyd
+
+
+# ==========================================================
+# Virtual Environments
+# ==========================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# ==========================================================
+# YOLO / Ultralytics Training
+# ==========================================================
+
+runs/
+wandb/
+mlruns/
+
+# Training caches
+*.cache
+
+# Dataset cache files
+train.cache
+val.cache
+test.cache
+
+
+# ==========================================================
+# Datasets
+# ==========================================================
+
+# Don't upload the actual dataset
+datacar/images/
+datacar/labels/
+
+# Dataset archives
+datacar.zip
+archive.zip
+archive_lane.zip
+
+# Other dataset folders if created later
+datasets/
+dataset/
+data/
+
+
+# ==========================================================
+# Model Weights
+# ==========================================================
+
+# Ignore large model files by default
+*.pt
+*.pth
+*.onnx
+*.engine
+*.weights
+
+
+# ==========================================================
+# Generated Output
+# ==========================================================
+
+output/
+outputs/
+
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+
+# ==========================================================
+# Temporary / Log Files
+# ==========================================================
+
+*.tmp
+*.log
+*.bak
+*.swp
+*.swo
+
+
+# ==========================================================
+# OS Files
+# ==========================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ==========================================================
+# VS Code
+# ==========================================================
+
+.vscode/
+*.code-workspace
+
+
+# ==========================================================
+# Jupyter
+# ==========================================================
+
+.ipynb_checkpoints/
+
+
+# ==========================================================
+# Python Environment / Packaging
+# ==========================================================
+
+*.egg-info/
+dist/
+build/
+
+
+# ==========================================================
+# Personal / Temporary Documents
+# ==========================================================
+
+~$*
+*.tmp
+
+
+# ==========================================================
+# Generated Images
+# ==========================================================
+
+# Ignore generated ChatGPT images / screenshots
+ChatGPT Image *.png
+ChatGPT Image *.jpg
+ChatGPT Image *.jpeg
+
+
+# ==========================================================
+# ZIP / Archive Files
+# ==========================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+
+# ==========================================================
+# IDE / Editor Files
+# ==========================================================
+
+.idea/
+*.suo
+*.user
+*.userosscache
+
+
+# ==========================================================
+# System-specific Files
+# ==========================================================
+
+.DS_Store
+desktop.ini
+
+# ==========================================================
+# DADIS Project-Specific
+# ==========================================================
+
+# Old project version
+autonomous driver/
+
+# Dataset - keep only configuration
+datacar/*
+!datacar/data.yaml
+
+# Dashcam input/output
+autonomous_driver/dashcam.mp4
+autonomous_driver/output/
+
+# Old model weights
+autonomous_driver/models/*old*.pt
+
+# ==========================================================
+# Extra Project Documents
+# ==========================================================
+
+DADIS.docx
+Dashcam Autonomous Driver Intelligence System timeline.docx
+Dashcam Autonomous Driver Intelligence System timeline.pdf
+LaneSpringer.pdf
+
+# ==========================================================
+# DADIS PROJECT FILES TO IGNORE
+# ==========================================================
+
+# Datasets
+datacar/
+archive_lane/
+autonomous_driver/datasets/
+
+# Videos
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+
+# Model training outputs
+runs/
+autonomous_driver/output/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Old / backup project folders
+archive/
+archive.zip
+archive_lane.zip
+datacar.zip
+best.pt
+last.pt
+
+# Old duplicate project folder
+"autonomous driver"/
+
+# Documentation
+*.docx
+!DADIS.pdf
+!DADIS_System_Architecture_Diagrams.pdf
